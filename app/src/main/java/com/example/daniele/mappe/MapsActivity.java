@@ -253,8 +253,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onLocationChanged(Location location) {
-        int lat = (int) (location.getLatitude());
-        int lng = (int) (location.getLongitude());
+        double lat = (location.getLatitude());
+        double lng = (location.getLongitude());
         //latituteField.setText(String.valueOf(lat));
         //longitudeField.setText(String.valueOf(lng));
         Toast.makeText(this, "Lat = "+ lat+ " Long = "+ lng, Toast.LENGTH_SHORT).show();
